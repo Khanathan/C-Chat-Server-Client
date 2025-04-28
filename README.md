@@ -18,12 +18,15 @@ Key features:
 - Coordinates shutdown when all clients have finished sending messages
   
 ### Client
-The client component connects to the server, sends random messages, and receives messages from other clients.
+The client component is a fuzzer (mainly for testing the server) which connects to the server, sends a specified number of random messages, and receives messages from all clients.
+
 Key features:
 - Simultaneous message sending and receiving using threads
 - Logs received messages to a specified file
 - Generates random content for test messages
 - Terminates gracefully after sending specified number of messages
+
+I will definitely have to come back to this project at some point and complete a normal client to use with the server.
 
 ## Message Protocol
 Messages have a simple format:
@@ -41,8 +44,23 @@ Parameters:
 - \# of clients: The number of expected client connections
   
 ### Client
+```./client <IP address> <port number> <# of messages> <log file path>```
 
+Parameters:
+- IP address: IP address of the server
+- port number: Port number the server is listening on
+- \# of messages: Number of messages to send before terminating
+- log file path: Path to file where received messages will be logged
+  
 ## Build Instructions
+Compile the project using the following commands:
+```
+# Compile server
+gcc -o server server.c -pthread
+
+# Compile client
+gcc -o client client.c -pthread
+```
 
 ## Example Session
 
