@@ -87,6 +87,6 @@ gcc -o client client.c -pthread
 This project demonstrates advanced network programming concepts including multi-threading, TCP socket programming, and IPC (Inter-Process Communication) in a distributed environment.
 
 ## Testing
-Unit tests using Criterion cover all server features to make sure they work as intended.
+Unit tests using Criterion validate server functionalities, making sure everything works as expected.
 
 
