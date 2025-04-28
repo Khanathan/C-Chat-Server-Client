@@ -26,7 +26,7 @@ Key features:
 - Generates random content for test messages
 - Terminates gracefully after sending specified number of messages
 
-I will definitely have to come back to this project at some point and complete a normal client to use with the server.
+Note to self: I will definitely have to come back to this project at some point and complete a normal client to use with the server.
 
 ## Message Protocol
 Messages have a simple format:
@@ -63,5 +63,25 @@ gcc -o client client.c -pthread
 ```
 
 ## Example Session
+1. Start the server (on port 8080, expecting 3 clients):
+```./server 8080 3 ```
+
+3. Start 3 clients (each sending 10,15,20 messages, writing received messages to their own log files) :
+```
+./client 127.0.0.1 8080 10 client1.log
+./client 127.0.0.1 8080 15 client2.log
+./client 127.0.0.1 8080 20 client3.log
+```
+
+4. Each client will send its specified number of messages, then signal completion by sending a type 1 message
+5. When all clients have signaled completion, the server will send termination messages to all clients
+6. All processes will exit gracefully
 
 ## Technical Implementation
+- Written in C using POSIX threads and socket APIs
+- Uses TCP sockets for reliable, ordered message delivery
+- Uses mutex locks and condition variables for thread synchronization
+- Implements efficient buffer management for message processing
+- Uses non-blocking I/O for better performance and responsiveness
+
+This project demonstrates advanced network programming concepts including multi-threading, TCP socket programming, and IPC (Inter-Process Communication) in a distributed environment.
