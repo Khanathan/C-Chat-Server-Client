@@ -33,9 +33,12 @@ Messages have a simple format:
 4. Terminator: Newline character (\n)
 
 ## Usage
-
 ### Server
-
+```./server <port number> <# of clients>```
+Parameters:
+- port number: The port on which the server will listen for connections
+- \# of clients: The number of expected client connections
+- 
 ### Client
 
 ## Build Instructions
