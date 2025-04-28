@@ -1,0 +1,4 @@
+/home/cmpt201/src/build/CMakeFiles/server.dir
+/home/cmpt201/src/build/CMakeFiles/client.dir
+/home/cmpt201/src/build/CMakeFiles/edit_cache.dir
+/home/cmpt201/src/build/CMakeFiles/rebuild_cache.dir
