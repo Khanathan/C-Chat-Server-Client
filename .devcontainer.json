@@ -1,9 +1,0 @@
-{
-    "name": "cmpt201",
-    "image": "sha256:5bd596ee672f5f7d1616e8b62303af52bd50c34233b118470c429a7c859b3e55",
-    "workspaceFolder": "/workspace",
-    "mounts": [
-        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
-    ],
-    "remoteUser": "kd"
-}
