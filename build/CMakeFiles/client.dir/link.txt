@@ -1,1 +1,0 @@
-/usr/bin/clang -g -g -O0 -Wall -Wextra CMakeFiles/client.dir/src/client.c.o -o client  -lpthread 

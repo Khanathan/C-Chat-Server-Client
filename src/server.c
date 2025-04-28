@@ -1,4 +1,5 @@
-#include "server.h"
+// #include "server.h"
+#include "../include/server.h"
 
 // Global pthread key for thread-specific data
 pthread_key_t server_key;
@@ -502,6 +503,7 @@ void cleanup_server(server_ctx_t *ctx)
     pthread_key_delete(server_key);
 }
 
+#ifndef UNIT_TEST
 int main(int argc, char *argv[])
 {
     if (argc != 3)
@@ -526,3 +528,4 @@ int main(int argc, char *argv[])
 
     return EXIT_SUCCESS;
 }
+#endif
