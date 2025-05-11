@@ -85,6 +85,6 @@ gcc -o client client.c -pthread
 - Uses non-blocking I/O for better performance and responsiveness
 
 ## Testing
-Criterion is used for unit tests.
+Criterion is used for unit tests. Server's basic features are tested (setting socket to non-blocking, adding clients, enqueueing messages, message handling, etc)
 
 
