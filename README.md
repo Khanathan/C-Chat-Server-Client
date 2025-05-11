@@ -73,7 +73,7 @@ gcc -o client client.c -pthread
 ./client 127.0.0.1 8080 20 client3.log
 ```
 
-4. Each client will send its specified number of messages, then signal completion by sending a type 1 message
+4. Each client will send its specified number of messages, then signal completion by sending a termination message
 5. When all clients have signaled completion, the server will send termination messages to all clients
 6. All processes will exit gracefully
 
