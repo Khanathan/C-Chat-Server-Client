@@ -11,10 +11,9 @@
 
 #include "../include/server.h"
 
-// Declare a test suite with setup and teardown
+// Test suite with setup and teardown
 TestSuite(server, .init = setup, .fini = teardown);
 
-// Global variables for testing (avoid if possible; moved to setup where feasible)
 static server_ctx_t test_ctx;
 static int mock_client_fd = 100;
 static msg_queue_t *test_queue = NULL;
