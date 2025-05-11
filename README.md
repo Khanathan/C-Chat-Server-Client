@@ -1,5 +1,5 @@
 # C Multi-Client Chat Server
-A multi-threaded messaging system using TCP sockets which enables multiple clients to connect to a centralized chat server.
+A multi-threaded chat server using TCP sockets which enables multiple clients to connect to a centralized chat server.
 
 ## Overview
 This project implements a complete client-server architecture with the following features:
