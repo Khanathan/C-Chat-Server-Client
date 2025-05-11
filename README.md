@@ -83,7 +83,7 @@ gcc -o client client.c -pthread
 - Uses mutex locks and condition variables for thread synchronization
 - Implements efficient buffer management for message processing
 - Uses non-blocking I/O for better performance and responsiveness
-- 
+
 This project demonstrates advanced network programming concepts including multi-threading, TCP socket programming, and IPC (Inter-Process Communication) in a distributed environment.
 
 ## Testing
