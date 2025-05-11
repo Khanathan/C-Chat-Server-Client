@@ -2,7 +2,7 @@
 A multi-threaded TCP sockets chat server that supports multiple concurrent clients.
 
 ## Overview
-This project implements a complete client-server architecture with the following features:
+This project implements a client-server architecture with the following features:
 - Multi-threaded design: Both client and server use separate threads for handling message sending, receiving, and processing
 - Non-blocking I/O: Socket operations are non-blocking for better performance
 - Message queue mechanism: Uses a thread-safe message queue for handling incoming messages
