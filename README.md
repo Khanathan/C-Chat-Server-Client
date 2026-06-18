@@ -26,8 +26,6 @@ Key features:
 - Generates random content for test messages
 - Terminates gracefully after sending specified number of messages
 
-Note to self: I will definitely have to come back to this project at some point and complete a normal client to use with the server.
-
 ## Message Protocol
 Messages have a simple format:
 1. Type byte: 0 for regular messages, 1 for termination signals
